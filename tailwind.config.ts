@@ -34,11 +34,35 @@ const config: Config = {
         800: "#333333",
         DEFAULT: "#1D1D1D",
       },
+     
+      carrd: {
+      200: "#FEB72F",
+      },
+  
+
+      yellow: {
+        200: "#FFECAE",
+
+        DEFAULT: "#FFECAE",
+      },
+
+      blue: {
+        200: "#F6FFFE",
+       
+        DEFAULT: "#F6FFFE",
+      },
+
+      purple: {
+        200: "#9F21CF",
+       
+        DEFAULT: "#9F21CF",
+      },
+
 
       alert: {
         danger: "#FF4E4E",
         success: "#90DA1",
-        Warning: "#FEB72F"
+        Warning: "#FEB72F",
       }
     },
     

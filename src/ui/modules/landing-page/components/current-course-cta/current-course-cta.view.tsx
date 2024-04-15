@@ -1,44 +1,191 @@
 import { Container } from "@/ui/components/container/container";
+import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typography/typography";
 import Image from "next/image";
-import { RiPlayCircleLine } from "react-icons/ri";
+
+import { RiArrowRightLine, RiPlayCircleLine } from "react-icons/ri";
 
 
 
 export const CurrentCourseCtaView = () => {
     return (
-        <div className="bg-gray-300">
-            <Container className="py-24 text-center">
-                <Typography variant="h2" component="h2" className="mb-2.5" >
-                    Formation React.js gratuite
-                </Typography>
+        <div className="bg-yellow-200">
+            <Container className="py-6 space-y-4 mt-4 ">
 
-                <Typography variant="lead" component="h3" className="mb-5" >
-                    Apprends a coder l'app des siges codeurs
-                </Typography>
+                <div className="flex justify-center gap-24">
 
-                <Typography variant="caption3" component="p" theme="gray" className="mb-16" >
-                    si tu veux un cv plus sexy que ton ex, suis cette formation
-                </Typography>
-
-                <a href="/" target="_blank">
-                    <div className="relative bg-gray-400 rounded h-[626px]">
-                        <div className="relative flex flex col items-center justify-center gap-2 z-10 h-full bg-gray rounded opacity-o hover:opacity-95 animate">
-                            <RiPlayCircleLine size={52} />
-                            <Typography
-                                variant="caption2"
-                                theme="white"
-                                className="upercase"
-                                weight="meduim">
-                                Lire la formation
-                            </Typography>
+                    <div className="w-[600px] h-[500px] relative mt-3 flex justify-between ">
+                        <div className=" w-[550px] h-[500px] top-30 left-398 bg-purple-200 rounded-full opacity-70 blur-[70px]  relative">
                         </div>
-                        <Image fill src="assets/images/Hero.png" alt="" className="object-cover object-center rounded" />
+                        <Image width={710} height={610} src="assets/svg/coders.svg" alt="illustration gateau" className="  absolute Ovefflow-hidden" />
+
 
                     </div>
 
 
-                </a>
+                    <div className="py-15 space-y-5">
+                        <Typography variant="caption3" component="h2" theme="warning" >
+                            NOLIDO C'EST
+                        </Typography>
+
+
+                        <div className="relative">
+                            <Typography variant="h3" component="h3" theme="black" >
+                                Le transfert d'argent le plus rapide en Afrique
+                            </Typography>
+                        </div>
+
+                        <div className="relative">
+                            <Typography variant="caption2" component="h2" theme="black" >
+                                Quand le transfert d'argent devient un simple reflexe.Encourageons le développement
+                                et la prospérité des familles africaines
+                            </Typography>
+                        </div>
+
+                        <div className="flex flex grid grid-rows-2 space-y-5">
+
+                            <div className="flex flex col space-x-20  ">
+
+                                <div className="flex flex-row gap-1 ">
+                                    <div className="bg-gray-700 rounded-full w-[110px] h-[40px] text-center    ">
+                                        {/* <div className="flex flex-col top-0 mt-0 ">
+                                            <Typography variant="caption4" component="h2" theme="black" className="">
+                                                .
+                                            </Typography>
+                                            <Typography variant="caption4" component="h2" theme="black" className="">
+                                                .
+                                            </Typography>
+                                            <Typography variant="caption4" component="h2" theme="black" className="">
+                                                .
+                                            </Typography>
+                                        </div> */}
+
+                                    </div>
+
+                                    <div className="flex flex-col ">
+                                        <Typography variant="body-lg" component="span" theme="gray-600" className="py-3">
+                                            Simple
+                                        </Typography>
+
+                                        <Typography variant="caption4" component="p" theme="gray-600">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, omnis! Expedita earum odit, optio,
+                                        </Typography>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div className="flex flex-row gap-1 ">
+                                    <div className="bg-gray-700 rounded-full w-[110px] h-[40px] text-center    ">
+                                        {/* <div className="flex flex-col top-0 mt-0 ">
+                                            <Typography variant="caption4" component="h2" theme="black" className="">
+                                                .
+                                            </Typography>
+                                            <Typography variant="caption4" component="h2" theme="black" className="">
+                                                .
+                                            </Typography>
+                                            <Typography variant="caption4" component="h2" theme="black" className="">
+                                                .
+                                            </Typography>
+                                        </div> */}
+
+                                    </div>
+
+                                    <div className="flex flex-col ">
+                                        <Typography variant="body-lg" component="span" theme="gray-600" className="py-3">
+                                            Economique
+                                        </Typography>
+
+                                        <Typography variant="caption4" component="p" theme="gray-600">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, omnis! Expedita earum odit, optio,
+                                        </Typography>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div className="flex flex col space-x-20  ">
+
+                                <div className="flex flex-row gap-1 ">
+                                    <div className="bg-gray-700 rounded-full w-[110px] h-[40px] text-center    ">
+                                        {/* <div className="flex flex-col top-0 mt-0 ">
+                <Typography variant="caption4" component="h2" theme="black" className="">
+                    .
+                </Typography>
+                <Typography variant="caption4" component="h2" theme="black" className="">
+                    .
+                </Typography>
+                <Typography variant="caption4" component="h2" theme="black" className="">
+                    .
+                </Typography>
+            </div> */}
+
+                                    </div>
+
+                                    <div className="flex flex-col ">
+                                        <Typography variant="body-lg" component="span" theme="gray-600" className="py-3">
+                                            Rapide
+                                        </Typography>
+
+                                        <Typography variant="caption4" component="p" theme="gray-600">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, omnis! Expedita earum odit, optio,
+                                        </Typography>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div className="flex flex-row gap-1 ">
+                                    <div className="bg-gray-700 rounded-full w-[110px] h-[40px] text-center    ">
+                                        {/* <div className="flex flex-col top-0 mt-0 ">
+                <Typography variant="caption4" component="h2" theme="black" className="">
+                    .
+                </Typography>
+                <Typography variant="caption4" component="h2" theme="black" className="">
+                    .
+                </Typography>
+                <Typography variant="caption4" component="h2" theme="black" className="">
+                    .
+                </Typography>
+            </div> */}
+
+                                    </div>
+
+                                    <div className="flex flex-col ">
+                                        <Typography variant="body-lg" component="span" theme="gray-600" className="py-3">
+                                            Fiable
+                                        </Typography>
+
+                                        <Typography variant="caption4" component="p" theme="gray-600">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, omnis! Expedita earum odit, optio,
+                                        </Typography>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
             </Container>
 
         </div>

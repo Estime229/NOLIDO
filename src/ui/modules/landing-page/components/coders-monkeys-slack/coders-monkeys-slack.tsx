@@ -7,31 +7,83 @@ import Image from "next/image"
 
 export const CodersMonkeysSlackView = () => {
     return (
-        <Container className="flex  justify-between">
-            <div className="flex flex-col justify-center max-w-2xl space-y-5 ">
-                <div className="flex items-center gap-2">
+        <Container className=" py-10   space-y-3">
+            <div className="text-center mt-10" >
+                <Typography variant="h2" theme="black" component="h2">
+                    Fonctionnalités
+                </Typography>
+            </div>
 
-                    <Logo size="very-small" />
-                    <Typography variant="caption2" component="span" weight="meduim" >
-                        Coders Monkeys
-                    </Typography >
+            <div className="grid-rows-4 space-y-15 py-10 ">
+                <div className="flex flex col py-10 space-x-10 ">
+
+
+                    <div className="bg-gray-400  ">
+
+                        <Typography variant="h5" theme="black" className="mt-10 ml-10 mr-5">
+                            Solution instantannée1
+                        </Typography>
+
+                        <Typography variant="caption1" theme="primary" className="mt-2 ml-10 mr-5 mb-3"  >
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            Fuga necessitatibus v!Lorem, ipsum dolor sit amet co
+
+                        </Typography>
+
+                    </div>
+
+                    <div className="bg-gray-400  ">
+
+                        <Typography variant="h5" theme="black" className="mt-10 ml-10 mr-5">
+                            Solution instantannée2
+                        </Typography>
+
+                        <Typography variant="caption1" theme="primary" className="mt-2 ml-10 mr-5 mb-10 "  >
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            Fuga necessitatibus v!Lorem, ipsum dolor sit amet co
+
+                        </Typography>
+
+                    </div>
                 </div>
-                <Typography variant="h2" component="h2" theme="gray">
-                    Rejoins-nous sur le Slack des singes codeurs
-                </Typography>
 
-                <Typography variant="body-lg" component="p" theme="gray" className="max-w-lg">
-                    Rejoins-nous et obtiens de l'aide, des conseils et pourquoi pas de nouveaux potes  {" "}
-                </Typography>
-                <Button baseUrl="/#" linkType={LinkTypes.EXTERNAL}>
-                    Rejoindre le groupe d'aide
-                </Button>
+
+                <div className="flex flex col py-10 space-x-10 ">
+
+
+                    <div className="bg-gray-400  ">
+
+                        <Typography variant="h5" theme="black" className="mt-10 ml-10 mr-5">
+                            Solution instantannée1
+                        </Typography>
+
+                        <Typography variant="caption1" theme="primary" className="mt-2 ml-10 mr-5 mb-3"  >
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            Fuga necessitatibus v!Lorem, ipsum dolor sit amet co
+
+                        </Typography>
+
+                    </div>
+
+                    <div className="bg-gray-400  ">
+
+                        <Typography variant="h5" theme="black" className="mt-10 ml-10 mr-5">
+                            Solution instantannée2
+                        </Typography>
+
+                        <Typography variant="caption1" theme="primary" className="mt-2 ml-10 mr-5 mb-10 "  >
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            Fuga necessitatibus v!Lorem, ipsum dolor sit amet co
+
+                        </Typography>
+
+                    </div>
+                </div>
+
+
             </div>
 
-            <div className="relative w-[600px] h-[600px]">
-                <Image fill  src= {"/assets/svg/mask.svg"} 
-                  alt="Groupe slack"/>
-            </div>
+
         </Container>
     )
 }

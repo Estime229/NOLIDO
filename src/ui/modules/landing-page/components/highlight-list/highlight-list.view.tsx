@@ -2,86 +2,99 @@ import { Container } from "@/ui/components/container/container";
 import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typography/typography";
 import Image from "next/image";
-import { RiArrowRightLine, RiCheckboxBlankCircleLine, RiCheckboxCircleLine } from "react-icons/ri";
-
+import { RiAppleLine, RiGooglePlayFill, RiMoneyCnyBoxFill, RiMoneyDollarBoxFill, RiMoneyDollarBoxLine, RiPlayCircleLine, RiSecurePaymentLine } from "react-icons/ri";
 
 export const HighlightListView = () => {
     return (
-        <Container className="py-24 space-y-10">
+        <div className="border-gray-400 relative bg-cover " style={{ 
+            backgroundImage: "url('assets/svg/.svg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+        
+            
+        }}>
+        <Container className="relative pt-36 pb-52 overflow-hidden " >
+            <div className="w-full max-w-2xl space-y-3  ">
+                <Typography variant="h5" component="h1" className="mx-w-lg" theme="warning">
+                    TELECHARGER NOLIDO
+                </Typography>
+                <Typography variant="h5" component="h3" theme="black" className="mx-w-xl pt-3">
+                   Phase d'enquete: vous
+                   avez choisi Nolido, et vous avez raison
+                </Typography>
 
-            <div className="flex justify-center gap-24">
-                <div className="w-[520px] h-[350px] relative mt-10 bg-gray-400">
-                    <Image fill src="assets/svg/cake.svg" alt="illustration gateau" />
+                <Typography variant="caption2" component="h3" theme="gray" className="mx-w-xl pt-3">
+                  Cette application vous offre une expérience nouvelle du transfert d'argent.
+                  Imaginez-vous effectuer votre transfert en toute tranquilité Nolido c'est
+                  nettement un gain en temps et en argent.
+                </Typography>
+
+
+
+                <div className=" flex items-center space-x-8 pt-8 ">
+                
+                   
+                       <Button baseUrl="" variant="warning">
+                    
+                    <div className="relative flex flex col items-center justify-center gap-2">
+                        <RiGooglePlayFill size={35} color="black"/>
+                        <div className="flex flex-col mb-3">
+                             <Typography variant="caption3" theme="black" component="span" className="mr-3">
+                                DISPONIBLE SUR
+                            </Typography>
+                            <div className="text-gray font-extrabold text-[25px]">Google Play</div> 
+                        </div>
+                       
+                    </div>
+                    </Button> 
+
+                          
+                
+                 
+
+                    <Button baseUrl="" variant="warning">
+                    
+                    <div className="relative flex flex col items-center justify-center gap-2">
+                        <RiAppleLine size={35} color="black"/>
+                        <div className="flex flex-col mb-3">
+                             <Typography variant="caption3" theme="black" component="span" className="mr-3">
+                               Télécharger dans
+                            </Typography>
+                            <div className="text-gray font-extrabold text-[25px]">l'App Store</div> 
+                        </div>
+                       
+                    </div>
+                    </Button> 
 
                 </div>
+        
+
+            </div>
+            <div className="space-x-30">
+                <Image
+                    src="/assets/svg/3.svg"
+                    alt="Evolution dev frontend"
+                    width={450}
+                    height={300}
+                    className="absolute top-20 right-5 z-0"
+                />
 
 
-                <div className="max-w-md space-y-7">
-                    <Typography variant="h3" component="h2">
-                        De novice à développeur en un clin d'oeil
-                    </Typography>
+                <Image
+                    src="/assets/images/telech.png"
+                    alt="Evolution dev frontend"
+                    width={600}
+                    height={600}
+                    className="absolute top-0 right-1 z-30 "
+                />
 
-                    <div className="space-y-3">
-                        <ListPoint>Progresse rapidement</ListPoint>
-                        <ListPoint>Inspire-toi</ListPoint>
-                        <ListPoint>Gagne de l'assurance</ListPoint>
-                    </div>
 
-                    <div className="relative">
-                        <Button baseUrl="/" icon={{ icon: RiArrowRightLine }} iconPosition="right">Let's go</Button>
-                    </div>
-
-                </div>
             </div>
 
-            <div className="flex justify-center gap-24">
-
-
-
-                <div className="max-w-md space-y-7">
-                    <Typography variant="h3" component="h2">
-                        Booste ta carrière de développeur
-                    </Typography>
-
-                    <div className="space-y-3">
-                        <ListPoint>Partage tes projets et obtiens des feedbacks</ListPoint>
-                        <ListPoint>Connecte-toi et élargis ton réseau pro</ListPoint>
-                        <ListPoint>Reste inspiré et motivé avec notre communauté</ListPoint>
-                    </div>
-
-                    <div className="relative">
-                        <Button baseUrl="/" icon={{ icon: RiArrowRightLine }} iconPosition="right" variant="secondary">Démarrer</Button>
-
-                    </div>
-
-                </div>
-
-
-                <div className="w-[520px] h-[350px] relative mt-10 bg-gray-400">
-                    <Image fill src="assets/svg/toupie.svg" alt="illustration gateau" />
-
-                </div>
-            </div>
 
 
         </Container>
-    )
-};
-
-
-
-interface Props {
-    children: React.ReactNode;
-}
-
-
-const ListPoint = ({ children }: Props) => {
-    return (
-        <div className="flex items-start gap-2">
-            <RiCheckboxCircleLine size={24} className="mt-1 text-secondary" />
-            <Typography variant="body-lg" component="span">
-                {children}
-            </Typography>
         </div>
     )
 }

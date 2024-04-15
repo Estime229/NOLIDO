@@ -3,55 +3,41 @@ import { RiLinkedinFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri";
 
 export const footerApplicationLinks: AppLinks [] = [
     {
-        label: "Accueil",
+        label: "Nous contacter",
+        baseUrl: "#/",
+        type: "internal", 
+    },
+
+    {
+        label: "Qui sommes nous",
         baseUrl: "/",
         type: "internal", 
     },
 
     {
-        label: "Projets",
+        label: "Mention légales",
         baseUrl: "/#",
         type: "internal", 
     },
 
-    {
-        label: "Coders Monkeys",
-        baseUrl: "/#",
-        type: "internal", 
-    },
 
-    {
-        label: "Formations",
-        baseUrl: "https://youtube.com@remotemonkey",
-        type: "external", 
-    },
 
 ];
 
 export const footerUserLinks: AppLinks [] = [
     {
-        label: "Mon espace",
+        label: "Politique de confidentialié",
         baseUrl: "/#",
         type: "internal", 
     },
 
     {
-        label: "Connexion",
+        label: "Condition d'utilisation",
         baseUrl: "/connexion",
         type: "internal", 
     },
 
-    {
-        label: "Inscription",
-        baseUrl: "/connexion/inscription",
-        type: "internal", 
-    },
-
-    {
-        label: "Mot de passe oublié",
-        baseUrl: "/connexion/mots-de-passe-perdu",
-        type: "internal", 
-    },
+  
 
 ];
 const footerInformationLinks: AppLinks [] = [
@@ -82,29 +68,29 @@ const footerInformationLinks: AppLinks [] = [
 
 ];
 
-export const footerSocialNetworksLinks: AppLinks [] = [
-    {
-        label: "Youtube",
-        baseUrl: "https://youtube.com@remotemonkey",
-        type: "external", 
-        icon: RiYoutubeFill,
-    },
+// export const footerSocialNetworksLinks: AppLinks [] = [
+//     {
+//         label: "Youtube",
+//         baseUrl: "https://youtube.com@remotemonkey",
+//         type: "external", 
+//         icon: RiYoutubeFill,
+//     },
 
-    {
-        label: "Linkeldin",
-        baseUrl: "https://youtube.com@remotemonkey",
-        type: "external", 
-        icon: RiLinkedinFill,
-    },
+//     {
+//         label: "Linkeldin",
+//         baseUrl: "https://youtube.com@remotemonkey",
+//         type: "external", 
+//         icon: RiLinkedinFill,
+//     },
 
-    {
-        label: "Stack",
-        baseUrl: "https://youtube.com@remotemonkey",
-        type: "external", 
-        icon: RiSlackFill,
-    },
+//     {
+//         label: "Stack",
+//         baseUrl: "https://youtube.com@remotemonkey",
+//         type: "external", 
+//         icon: RiSlackFill,
+//     },
  
-];
+// ];
 
 export const footerLinks = [
     {
@@ -117,14 +103,6 @@ export const footerLinks = [
         links : footerUserLinks,
     },
 
-    {
-        label: "Informations",
-        links : footerInformationLinks,
-    },
-
-    {
-        label: "Réseaux",
-        links : footerSocialNetworksLinks,
-    },
+   
 ]
 

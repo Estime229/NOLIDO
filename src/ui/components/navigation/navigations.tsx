@@ -4,45 +4,58 @@ import { Typography } from "@/ui/design-system/typography/typography"
 import { Button } from "@/ui/design-system/button/button"
 import Link from "next/link"
 import { ActiveLink } from "./active-link"
+// import { useAuth } from "@/context/AuthUserContext"
+import { DiVim } from "react-icons/di"
+import { AccountAvatarNavigationLink } from "./account-avatar-link"
 
 interface Props {
 
 }
 
 export const Navigation = ({ }) => {
+    // const { authUser } = useAuth();
+    // console.log("authUser", authUser);
+    // const authentificationSystem = (
+    //     <div className="flex items-center gap-2">
+    //         <Button size="small" baseUrl="/connexion">Connexion</Button>
+    //         <Button size="small" variant="secondary" baseUrl="/connexion/inscription">Rejoindre</Button>
+
+    //     </div>
+    // );
+
+
+
     return (
-     
-        <div className="border-b-2 border-gray-400">
+        <div className="border-gray-400 relative bg-cover bg-blue-200" style={{ 
+            backgroundImage: "url('assets/svg/.svg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            
+        }}>
+        <div className=" border-gray-400">
             <Container className="flex items-center justify-between gap-7 py-1.5">
-             <Link href="/">
-                <div className="flex items-center gap-2.5">
-                    <Logo size="small" />
-                    <div className="flex flex-col">
-                        <div className="text-gray font-extrabold text-[24px]">Coders Monkeys</div>
-                        <Typography variant="caption4" theme="gray" component="span">
-                            Trouvez de linspiration et recois des feedbacks
-                        </Typography>
+                <Link href="/">
+                    <div className="flex items-center gap-2.5">
+                        <Logo size="small" />
+                    
+
                     </div>
-                 
-                </div>
                 </Link>
                 <div className="flex items-center gap-7">
-                    <Typography variant="caption3" component="div" className="flex items-center gap-7">
-                        <ActiveLink  href="/design-system">Design system </ActiveLink>
-                        <Link  href="/projets">Projets </Link>
-                        <Link  href="/formation">Formation </Link>
-                        <Link  href="/contacts">Contacts </Link>
+                    <Typography variant="h5"  theme="warning" className="flex items-center gap-7">
+                    <Button variant="secondary">Télécharger Nolido</Button> 
                     </Typography>
+                 
 
-                
+                 {/* {!authUser ? authentificationSystem: <AccountAvatarNavigationLink/>} */}
 
-                    <div className="flex items-center gap-2">
-                        <Button size="small"  baseUrl="/connexion">Connexion</Button>
-                        <Button size="small" variant="secondary" baseUrl="/connexion/inscription">Rejoindre</Button>
 
-                    </div>
+
+
                 </div>
             </Container>
         </div>
+    </div>
     )
 }

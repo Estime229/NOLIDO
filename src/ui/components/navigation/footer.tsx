@@ -8,6 +8,7 @@ import { ActiveLink } from './active-link';
 import { AppLinks, FooterLinks } from '@/types/app-links';
 import { LinkTypes } from '@/lib/link-type';
 import { SocialNetworksButtons } from './social-networks-buttons';
+import { RiInstagramFill, RiTiktokFill, RiTwitterFill } from 'react-icons/ri';
 
 
 export const Footer = () => {
@@ -19,43 +20,43 @@ export const Footer = () => {
     ));
     return (
 
-        <div className="bg-gray ">
+        <div className="bg-white ">
             <Container className='flex justify-between pt-16'>
-                <div className='flex flex-col items-center gap-1'>
-                    <Typography variant='caption1' theme='white'
-                        weight='meduim'>
-                        Formations gratuites
-                    </Typography>
-                    <Typography variant='caption3' theme='gray'
-                    >
-                        Abonne-toi à la chaine !
-                    </Typography>
-                    <a href="https://youtube.com/@remotemonkey" target="_blank">
-                        <Image
-                            src="/assets/svg/YTB.svg"
-                            width={229}
-                            height={216}
+                <div className='flex flex-col items-center  py-2 space-y-3'>
+                <Image
+                            src="/assets/svg/logo.svg"
+                            width={190}
+                            height={200}
                             alt='RemoteMonkey'
+                            className='mr-48 '
                         />
-                    </a>
+                    <Typography variant='body-sm' theme='gray' component='p' className='ml-5' >
+                       Lorem ipsum dolor sit, amet consectetur adipisicing eli 
+                   
+                    </Typography>
+                    
+                    <div className='flex space-x-5 mr-60 '>
+                    <RiTwitterFill size={30} color='Orange' className=''/>
+                    <RiInstagramFill size={30}/>
+                    <RiTiktokFill size={30}/>
+                    </div>
+                                                         
                 </div>
-                <div className='flex gap-7'>
+                <div className='flex  gap-7'>
                      {FooterNavigationList}     
                 </div>
             </Container>
 
-            <Container className='pt-9 pb-11 space-y-11'>
-                <hr className='text-gray-800' />
-                <div className='flex items-center justify-between'>
-                    <Typography variant='caption4' theme='gray'>
-                        {`coprigth @ ${currentYear}  |  Propulsed  by `} {""}
-                        <a href="https:/gliti-estime.fr" target='_blank' className='underline'> Estime Gliti</a>
-                        {`- Remonte monkey SASU`}
+            <Container className='pt-9 pb-11 space-y-11 '>
+                <hr className='text-gray-300' />
+                <div className='text-center'>
+                    <Typography variant='caption4' theme='gray' className='items-center'>
+                        {` @ ${currentYear}  .  GNISSEART.`} {""}
+                      
+                        {`Tous droits réservés`}
                     </Typography>
            
-                    <div className="">
-                    <SocialNetworksButtons theme='gray' />
-                </div>
+                 
                 </div>
             </Container>
 

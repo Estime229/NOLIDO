@@ -13,7 +13,7 @@ export const LandingPageView = () => {
         <CurrentCourseCtaView />
         
         <HighlightListView />
-        <CallToActionView />
+        {/* <CallToActionView /> */}
 
         
     </>
