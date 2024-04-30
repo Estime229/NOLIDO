@@ -17,7 +17,7 @@ export const HeroTopView = () => {
         <Container className="relative pt-40 pb-52 overflow-hidden " >
             <div className="w-full max-w-2xl space-y-5  ">
                 <Typography variant="h3" component="h1" className="mx-w-lg">
-                    Envoyez de l'argent en Afrique en temps réel avec NOLIDO
+                    Envoyez de l&apos;argent en Afrique en temps réel avec NOLIDO
                 </Typography>
                 <Typography variant="lead" component="div" theme="gray" className="mx-w-xl pt-3">
                     Décrouvrez Nolido, la solution concue pour vous offrir des

@@ -1,22 +1,19 @@
 import errors from "@/config/locales/errors.json"
-import { FirebaseError } from "firebase/app"
-
+import { FirebaseError as LocalFirebaseError } from "firebase/app"
 
 type FirebaseErrorType= {
     [key:string]: string
 }
 
-
-
 type FirebaseError = {
     [key:string]: FirebaseErrorType
 }
 
-
 const firebaseErrors : FirebaseError ={
     ...errors,
     an_unknown_error_has_occured: {
-an_unknown_error_has_occured:errors.an_unknown_error_has_occured}
+        an_unknown_error_has_occured: errors.an_unknown_error_has_occured
+    }
 }
 
 

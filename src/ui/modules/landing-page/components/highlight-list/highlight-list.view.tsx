@@ -20,13 +20,13 @@ export const HighlightListView = () => {
                     TELECHARGER NOLIDO
                 </Typography>
                 <Typography variant="h5" component="h3" theme="black" className="mx-w-xl pt-3">
-                   Phase d'enquete: vous
+                   Phase d&apos;enquete: vous
                    avez choisi Nolido, et vous avez raison
                 </Typography>
 
                 <Typography variant="caption2" component="h3" theme="gray" className="mx-w-xl pt-3">
-                  Cette application vous offre une expérience nouvelle du transfert d'argent.
-                  Imaginez-vous effectuer votre transfert en toute tranquilité Nolido c'est
+                  Cette application vous offre une expérience nouvelle du transfert d&apos;argent.
+                  Imaginez-vous effectuer votre transfert en toute tranquilité Nolido c&apos;est
                   nettement un gain en temps et en argent.
                 </Typography>
 
@@ -61,7 +61,7 @@ export const HighlightListView = () => {
                              <Typography variant="caption3" theme="black" component="span" className="mr-3">
                                Télécharger dans
                             </Typography>
-                            <div className="text-gray font-extrabold text-[25px]">l'App Store</div> 
+                            <div className="text-gray font-extrabold text-[25px]">l&apos;App Store</div> 
                         </div>
                        
                     </div>

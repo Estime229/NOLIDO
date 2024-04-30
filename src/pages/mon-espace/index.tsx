@@ -16,8 +16,12 @@ export default function Home() {
       <Seo title="Mon espace" description="Descrption.." />
 
       <Layout withSidebar>
-  
+        {/* Add some content here as children */}
+        <div>
+          This is the content of the Home page.
+        </div>
       </Layout>
+
     </>
 
   );

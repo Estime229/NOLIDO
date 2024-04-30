@@ -25,19 +25,19 @@ export const CurrentCourseCtaView = () => {
 
                     <div className="py-15 space-y-5">
                         <Typography variant="caption3" component="h2" theme="warning" >
-                            NOLIDO C'EST
+                            NOLIDO C&apos;EST
                         </Typography>
 
 
                         <div className="relative">
                             <Typography variant="h3" component="h3" theme="black" >
-                                Le transfert d'argent le plus rapide en Afrique
+                                Le transfert d&apos;argent le plus rapide en Afrique
                             </Typography>
                         </div>
 
                         <div className="relative">
                             <Typography variant="caption2" component="h2" theme="black" >
-                                Quand le transfert d'argent devient un simple reflexe.Encourageons le développement
+                                Quand le transfert d&apos;argent devient un simple reflexe.Encourageons le développement
                                 et la prospérité des familles africaines
                             </Typography>
                         </div>

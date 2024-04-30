@@ -4,7 +4,7 @@ import { RiLinkedinFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri";
 export const footerApplicationLinks: AppLinks [] = [
     {
         label: "Nous contacter",
-        baseUrl: "#/",
+        baseUrl: "/contact",
         type: "internal", 
     },
 
@@ -61,36 +61,36 @@ const footerInformationLinks: AppLinks [] = [
     
     {
         label: "Contact",
-        baseUrl: "/#",
-        type: "internal", 
+        baseUrl: "/contact",
+        type: "external", 
     },
 
 
 ];
 
-// export const footerSocialNetworksLinks: AppLinks [] = [
-//     {
-//         label: "Youtube",
-//         baseUrl: "https://youtube.com@remotemonkey",
-//         type: "external", 
-//         icon: RiYoutubeFill,
-//     },
+export const footerSocialNetworksLinks: AppLinks [] = [
+    {
+        label: "Youtube",
+        baseUrl: "https://youtube.com@remotemonkey",
+        type: "external", 
+        icon: RiYoutubeFill,
+    },
 
-//     {
-//         label: "Linkeldin",
-//         baseUrl: "https://youtube.com@remotemonkey",
-//         type: "external", 
-//         icon: RiLinkedinFill,
-//     },
+    {
+        label: "Linkeldin",
+        baseUrl: "https://youtube.com@remotemonkey",
+        type: "external", 
+        icon: RiLinkedinFill,
+    },
 
-//     {
-//         label: "Stack",
-//         baseUrl: "https://youtube.com@remotemonkey",
-//         type: "external", 
-//         icon: RiSlackFill,
-//     },
+    {
+        label: "Stack",
+        baseUrl: "https://youtube.com@remotemonkey",
+        type: "external", 
+        icon: RiSlackFill,
+    },
  
-// ];
+];
 
 export const footerLinks = [
     {
