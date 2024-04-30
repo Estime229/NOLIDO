@@ -5,6 +5,8 @@ import Image from "next/image";
 import { RiMoneyCnyBoxFill, RiMoneyDollarBoxFill, RiMoneyDollarBoxLine, RiPlayCircleLine, RiSecurePaymentLine } from "react-icons/ri";
 
 export const HeroTopView = () => {
+    const imagePath = process.env.NODE_ENV === 'production' ? 'https://estime229.github.io/public/assets/svg/2.svg' : '/assets/svg/2.svg';
+
     return (
         <div className="border-gray-400 relative bg-cover bg-blue-200" style={{ 
             backgroundImage: "url('assets/svg/.svg')",
@@ -79,14 +81,13 @@ export const HeroTopView = () => {
                     className="absolute top-20 right-5 z-0"
                 />
 
-
-                <Image
-                    src="/assets/svg/2.svg"
-                    alt="Evolution dev frontend"
-                    width={600}
-                    height={600}
-                    className="absolute top-0 right-1 z-30 "
-                />
+<Image
+    src={imagePath}
+    alt="Evolution dev frontend"
+    width={600}
+    height={600}
+    className="absolute top-0 right-1 z-30"
+/>
 
 
                 <Image
