@@ -72,7 +72,7 @@ export const HeroTopView = () => {
             </div>
             <div className="space-x-30">
                 <Image
-                    src="/assets/svg/3.svg"
+                    src="./assets/svg/3.svg"
                     alt="Evolution dev frontend"
                     width={550}
                     height={400}
@@ -90,7 +90,7 @@ export const HeroTopView = () => {
 
 
                 <Image
-                    src="/assets/svg/Frame 10.svg"
+                    src="./assets/svg/Frame 10.svg"
                     alt="Evolution dev frontend"
                     width={500}
                     height={300}
@@ -98,7 +98,7 @@ export const HeroTopView = () => {
                 />
 
                 <Image
-                    src="/assets/svg/money.svg"
+                    src="./assets/svg/money.svg"
                     alt="Evolution dev frontend"
                     width={50}
                     height={30}

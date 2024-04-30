@@ -73,7 +73,7 @@ export const HighlightListView = () => {
             </div>
             <div className="space-x-30">
                 <Image
-                    src="/assets/svg/3.svg"
+                    src="./assets/svg/3.svg"
                     alt="Evolution dev frontend"
                     width={450}
                     height={300}
@@ -82,7 +82,7 @@ export const HighlightListView = () => {
 
 
                 <Image
-                    src="/assets/images/telech.png"
+                    src="./assets/images/telech.png"
                     alt="Evolution dev frontend"
                     width={600}
                     height={600}
