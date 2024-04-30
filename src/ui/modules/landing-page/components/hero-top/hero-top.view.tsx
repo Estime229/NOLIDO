@@ -5,8 +5,6 @@ import Image from "next/image";
 import { RiMoneyCnyBoxFill, RiMoneyDollarBoxFill, RiMoneyDollarBoxLine, RiPlayCircleLine, RiSecurePaymentLine } from "react-icons/ri";
 
 export const HeroTopView = () => {
-    const imagePath = process.env.NODE_ENV === 'production' ? 'https://estime229.github.io/public/assets/svg/2.svg' : '/assets/svg/2.svg';
-
     return (
         <div className="border-gray-400 relative bg-cover bg-blue-200" style={{ 
             backgroundImage: "url('assets/svg/.svg')",
@@ -19,7 +17,7 @@ export const HeroTopView = () => {
         <Container className="relative pt-40 pb-52 overflow-hidden " >
             <div className="w-full max-w-2xl space-y-5  ">
                 <Typography variant="h3" component="h1" className="mx-w-lg">
-                    Envoyez de l&apos;argent en Afrique en temps réel avec NOLIDO
+                    Envoyez de l'argent en Afrique en temps réel avec NOLIDO
                 </Typography>
                 <Typography variant="lead" component="div" theme="gray" className="mx-w-xl pt-3">
                     Décrouvrez Nolido, la solution concue pour vous offrir des
@@ -81,13 +79,14 @@ export const HeroTopView = () => {
                     className="absolute top-20 right-5 z-0"
                 />
 
-<Image
-    src={imagePath}
-    alt="Evolution dev frontend"
-    width={600}
-    height={600}
-    className="absolute top-0 right-1 z-30"
-/>
+
+                <Image
+                    src="./assets/svg/2.svg"
+                    alt="Evolution dev frontend"
+                    width={600}
+                    height={600}
+                    className="absolute top-0 right-1 z-30 "
+                />
 
 
                 <Image
