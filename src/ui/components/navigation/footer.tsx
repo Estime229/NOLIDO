@@ -9,6 +9,7 @@ import { AppLinks, FooterLinks } from '@/types/app-links';
 import { LinkTypes } from '@/lib/link-type';
 import { SocialNetworksButtons } from './social-networks-buttons';
 import { RiInstagramFill, RiTiktokFill, RiTwitterFill } from 'react-icons/ri';
+import { Logo } from '@/ui/design-system/logo/logo';
 
 
 export const Footer = () => {
@@ -23,13 +24,7 @@ export const Footer = () => {
         <div className="bg-white ">
             <Container className='flex justify-between pt-16'>
                 <div className='flex flex-col items-center  py-2 space-y-3'>
-                <Image
-                            src="./assets/svg/logo.svg"
-                            width={190}
-                            height={200}
-                            alt='RemoteMonkey'
-                            className='mr-48 '
-                        />
+              <Logo size="small" />
                     <Typography variant='body-sm' theme='gray' component='p' className='ml-5' >
                        Lorem ipsum dolor sit, amet consectetur adipisicing eli 
                    
