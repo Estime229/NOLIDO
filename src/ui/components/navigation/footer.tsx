@@ -24,7 +24,7 @@ export const Footer = () => {
             <Container className='flex justify-between pt-16'>
                 <div className='flex flex-col items-center  py-2 space-y-3'>
                 <Image
-                            src="/assets/svg/logo.svg"
+                            src="./assets/svg/logo.svg"
                             width={190}
                             height={200}
                             alt='RemoteMonkey'
